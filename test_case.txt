@@ -1,0 +1,24 @@
+install requirenment file 
+  # pip install -r requirements.txt
+
+updates on scripts/
+	-pipeline.py 
+	- benchmark_runner.py
+
+
+install clang 
+	# sudo apt update
+	# sudo apt install clang -y
+
+----------------------step_1
+	All workding just add the sample code of c and run these command 
+ 
+1. Run your pipeline for extracting the dataset from sample code 
+
+	# python scripts/pipeline.py
+2. Train the mode on the basic of dataset
+	# python scripts/train_model.py
+
+3. Model test case 
+	# python scripts/test_model.py
+

@@ -1,0 +1,33 @@
+num_loops,max_nesting,num_branches,num_calls,num_funcs,loc,flags,runtime_ms,file
+1,3,3,2,113,16,-O1,0.0,conditional_branching.c
+1,3,3,2,113,16,-O2,0.0,conditional_branching.c
+1,3,3,2,113,16,-O3,0.0,conditional_branching.c
+1,3,3,2,113,16,-O2 -funroll-loops,0.0,conditional_branching.c
+1,3,1,4,112,13,-O1,0.0,switch_case.c
+1,3,1,4,112,13,-O2,0.0,switch_case.c
+1,3,1,4,112,13,-O3,0.0,switch_case.c
+1,3,1,4,112,13,-O2 -funroll-loops,0.0,switch_case.c
+1,3,1,3,113,13,-O1,0.0,factorial.c
+1,3,1,3,113,13,-O2,0.0,factorial.c
+1,3,1,3,113,13,-O3,0.0,factorial.c
+1,3,1,3,113,13,-O2 -funroll-loops,0.0,factorial.c
+2,3,0,1,112,12,-O1,0.0,nested_loops.c
+2,3,0,1,112,12,-O2,0.0,nested_loops.c
+2,3,0,1,112,12,-O3,0.0,nested_loops.c
+2,3,0,1,112,12,-O2 -funroll-loops,0.0,nested_loops.c
+1,3,1,4,113,14,-O1,0.0,sample.c
+1,3,1,4,113,14,-O2,0.0,sample.c
+1,3,1,4,113,14,-O3,0.0,sample.c
+1,3,1,4,113,14,-O2 -funroll-loops,0.0,sample.c
+7,3,0,15,271,57,-O1,10.0,matrix_multiply.c
+7,3,0,15,271,57,-O2,10.0,matrix_multiply.c
+7,3,0,15,271,57,-O3,10.0,matrix_multiply.c
+7,3,0,15,271,57,-O2 -funroll-loops,10.0,matrix_multiply.c
+1,3,0,1,112,10,-O1,0.0,test_case.c
+1,3,0,1,112,10,-O2,0.0,test_case.c
+1,3,0,1,112,10,-O3,0.0,test_case.c
+1,3,0,1,112,10,-O2 -funroll-loops,0.0,test_case.c
+2,3,0,1,112,15,-O1,0.0,sum_array.c
+2,3,0,1,112,15,-O2,0.0,sum_array.c
+2,3,0,1,112,15,-O3,0.0,sum_array.c
+2,3,0,1,112,15,-O2 -funroll-loops,0.0,sum_array.c
