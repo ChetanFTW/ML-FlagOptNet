@@ -1,12 +1,12 @@
-install requirenment file 
+Install Requirenment File 
   # pip install -r requirements.txt
 
-updates on scripts/
+Updates on scripts/
 	-pipeline.py 
 	- benchmark_runner.py
 
 
-install clang 
+Install clang 
 	# sudo apt update
 	# sudo apt install clang -y
 
