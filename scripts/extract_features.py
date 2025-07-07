@@ -11,12 +11,13 @@ def get_ast(filepath: Path) -> str:
         return result.stdout
     except subprocess.CalledProcessError as e:
         print(f"[⚠️] Clang AST extraction failed for {filepath.name}:\n{e.stderr}")
-        return ""
+        return "null"
 
 #def extract_features(ast: str) -> dict | None:
 def extract_features(ast: str) -> Union[dict, None]:
     if not ast.strip():
         return None
+        
     return {
         "num_loops": len(re.findall(r"(ForStmt|WhileStmt|DoStmt)", ast)),
         "max_nesting": max((len(l) - len(l.lstrip())) // 2 for l in ast.splitlines() if l.strip()),
