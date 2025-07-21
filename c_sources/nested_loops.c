@@ -7,9 +7,6 @@ int main() {
       total += i + j;
     }
   }
-  
-  printf("Total: %d\n", total);
-
-  
+  printf("Total: %d\n", total);  
   return 0;
 }
