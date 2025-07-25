@@ -10,7 +10,7 @@ def get_ast(filepath: Path) -> str:
         )
         return result.stdout
     except subprocess.CalledProcessError as e:
-        print(f"[⚠️] Clang AST extraction failed for {filepath.name}:\n{e.stderr}")
+        print(f"[wrong⚠️] Clang AST extraction failed for {filepath.name}:\n{e.stderr}")
         return "null"
 
 #def extract_features(ast: str) -> dict | None:
