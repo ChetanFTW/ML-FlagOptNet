@@ -1,9 +1,6 @@
 import pandas as pd
 from pathlib import Path
 from tqdm import tqdm
-
-#from scripts.extract_features import get_ast, extract_features
-#from scripts.benchmark_runner import compile_and_time
 from extract_features import get_ast, extract_features
 from benchmark_runner import compile_and_time
 
