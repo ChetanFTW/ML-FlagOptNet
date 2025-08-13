@@ -16,6 +16,7 @@ int main() {
         b[i] = malloc(SIZE * sizeof(int));
         c[i] = malloc(SIZE * sizeof(int));
     }
+    
     // Initialize matrices
     for (i = 0; i < SIZE; i++) {
         for (j = 0; j < SIZE; j++) {
@@ -24,6 +25,7 @@ int main() {
             c[i][j] = 0;
         }
     }
+    
     // Measure start time
     clock_t start = clock();
     // Matrix multiplication
@@ -34,6 +36,7 @@ int main() {
             }
         }
     }
+    
     // Measure end time
     clock_t end = clock();
     double time_taken = ((double)(end - start)) * 1000.0 / CLOCKS_PER_SEC;
@@ -44,6 +47,7 @@ int main() {
         free(b[i]);
         free(c[i]);
     }
+    
     free(a);
     free(b);
     free(c);
