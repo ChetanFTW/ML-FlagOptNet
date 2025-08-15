@@ -1,5 +1,6 @@
 # lib_main
 pandas
+numpy
 tqdm
 xgboost
 scikit-learn
