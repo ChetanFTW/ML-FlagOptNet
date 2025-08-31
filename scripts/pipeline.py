@@ -8,7 +8,7 @@ from benchmark_runner import compile_and_time
 SRC_DIR = Path("c_sources")
 FLAGS = ["-O1", "-O2", "-O3", "-O2 -funroll-loops"]
 rows = []
-
+# fetch and analyze
 def main():
     for cfile in tqdm(SRC_DIR.glob("*.c")):
         print(f"\n🔍 Processing: {cfile.name}")
