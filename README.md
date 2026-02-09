@@ -4,7 +4,7 @@ The core idea is to build a pipeline that combines static analysis (via AST pars
 
 By using machine learning (specifically XGBoost regressor), we can predict the runtime performance of C programs based on their structural features, and recommend the best set of compiler flags for optimization.
 
-## 🏗️ Project Overview
+##  Project Overview
 
 ### Objective
 The goal is to build a system that:
@@ -32,13 +32,13 @@ This pipeline can be used for:
 
 ---
 
-## 🚀 Code Performance Benchmarking & ML Prediction Pipeline
+##  Code Performance Benchmarking & ML Prediction Pipeline
 
 This project automates the **extraction of structural features from C programs**, benchmarks their execution under various **GCC compiler optimization flags**, and trains a machine learning model to **predict runtime performance** based on code structure.
 
 
 
-## 📦 Project Structure
+##  Project Structure
 ```
 code-benchmark-ml/
 ├── c_sources/ # Input C programs
@@ -58,7 +58,7 @@ code-benchmark-ml/
 
 ---
 
-## 🎯 Features Extracted (from AST)
+##  Features Extracted (from AST)
 
 | Feature         | Description                              |
 |----------------|------------------------------------------|
@@ -71,7 +71,7 @@ code-benchmark-ml/
 
 ---
 
-## ✅ Setup
+##  Setup
 
 ### 🛠 System Dependencies
 
@@ -82,7 +82,7 @@ sudo apt update
 sudo apt install gcc clang
 ```
 
-## 📦 Python Environment
+##  Python Environment
 ### Install dependencies:
 ```bash
 git clone https://github.com/yourusername/code-benchmark-ml.git
@@ -91,7 +91,7 @@ pip install -r requirements.txt
 ```
 
 
-## 🧪 Add C Files
+##  Add C Files
 Place your C programs in the `c_sources/` directory. These will be used for feature extraction and benchmarking.
 
 For optimal benchmarking, make sure your C files contain some computational complexity. Here's an example of a C loop with a heavy workload:
@@ -101,7 +101,7 @@ for (long long i = 0; i < 100000000; i++) {
     x += i % 3;
 }
 ```
-## 🚀 Running the Pipeline
+##  Running the Pipeline
 The pipeline automates the following processes:
 
 - **Extracts features** from C source files.
@@ -113,7 +113,7 @@ The pipeline automates the following processes:
 ```bash
 python scripts/pipeline.py
 ```
-## 🤖 Training the Model
+##  Training the Model
 Once you have the dataset, you can train the machine learning model. The model uses the structural features to predict runtime performance based on the data extracted from your C programs.
 
 ### To train the model, run:
@@ -125,7 +125,7 @@ python scripts/train_model.py
 ```
 ✅ Model R² score: 0.846
 ```
-## 🔮 Test on a New C File
+##  Test on a New C File
 Once the model is trained, you can use it to predict the runtime performance of a new C file.
 
 ### To predict the runtime performance of a new C file, run the following command:
@@ -147,7 +147,7 @@ python scripts/test_model.py c_sources/your_test_case.c
 ```
 
 
-## 📊 Example dataset.csv
+##  Example dataset.csv
 After running the pipeline and collecting the benchmark data, a `dataset.csv` file will be generated. This file contains the extracted features and runtime measurements for each C program and compiler flag combination.
 
 ### Here’s an example of how the generated `dataset.csv` looks:
